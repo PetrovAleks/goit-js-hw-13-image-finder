@@ -1,6 +1,7 @@
 const key = '17612485-8bb53cdbeec1d9d4515dc9d2c';
 export default {
   baseUrl: 'https://pixabay.com/api/?image_type=photo&orientation=horizontal',
+  searchQuery: '',
   page: 1,
   perPage: 12,
   inputValue: '',

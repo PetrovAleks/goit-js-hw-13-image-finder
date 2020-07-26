@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href=" dist/basicLightbox.min.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -27,9 +28,26 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button class="btn"></button>
     </form>
+
+    <span
+      class="spinner-grow spinner-grow-sm spiner-position js-spiner-form hiden"
+      role="status"
+      aria-hidden="true"
+    ></span>
+    <button class="spiner-position material-icons clear-list-img hiden">
+      highlight_off
+    </button>
+
     <ul class="gallery"></ul>
+    <div class="wrapper-btn">
+      <button
+        class="btn btn-primary btn--position load-more-js hiden"
+        type="button"
+      >
+        Показать еще 12
+      </button>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>

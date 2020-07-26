@@ -30,11 +30,12 @@ body {
 }
 
 .gallery {
+  position: relative;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding-left: 20px;
-  width: 70vp;
+  padding-bottom: 100px;
 }
 .item {
   margin-right: 10px;
@@ -58,4 +59,42 @@ body {
 }
 .card-img-top {
   height: 280px;
+}
+.icons {
+  transform: translate(0, 30%);
+}
+.btn {
+  cursor: pointer;
+}
+.hiden {
+  display: none;
+}
+.wrapper-btn {
+  position: relative;
+}
+.btn--position {
+  position: absolute;
+  left: 50%;
+  top: -80px;
+  transform: translate(-50%, 0);
+}
+.input {
+  position: relative;
+}
+.spiner-position {
+  position: absolute;
+  left: 63%;
+  top: 65px;
+}
+.material-icons {
+  left: 63%;
+  top: 63px;
+  transform: translate(-16%, -7%);
+}
+.clear-list-img {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.btn__show-more {
+  z-index: 2;
 }
