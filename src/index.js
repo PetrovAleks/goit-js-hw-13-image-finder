@@ -26,9 +26,10 @@ function searchImg() {
     .searchImg(apiService.searchQuery)
     .then(data => {
       markup(data.hits);
+      console.dir(data.hits.length);
 
       refs.clearBtn.classList.remove('hiden');
-      if (data.hits < 12) {
+      if (data.hits.length < 12) {
         refs.btnLoadMore.classList.add('hiden');
       } else {
         refs.btnLoadMore.classList.remove('hiden');
