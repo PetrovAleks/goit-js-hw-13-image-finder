@@ -26,7 +26,7 @@ body {
 }
 
 .input {
-  margin-left: 120%;
+  margin-left: 20vw;
 }
 
 .gallery {
@@ -83,11 +83,11 @@ body {
 }
 .spiner-position {
   position: absolute;
-  left: 63%;
+  left: 47%;
   top: 65px;
 }
 .material-icons {
-  left: 63%;
+  left: 47%;
   top: 63px;
   transform: translate(-16%, -7%);
 }

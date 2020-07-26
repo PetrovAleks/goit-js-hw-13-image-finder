@@ -26,8 +26,13 @@ function searchImg() {
     .searchImg(apiService.searchQuery)
     .then(data => {
       markup(data.hits);
+
       refs.clearBtn.classList.remove('hiden');
-      refs.btnLoadMore.classList.remove('hiden');
+      if (data.hits < 12) {
+        refs.btnLoadMore.classList.add('hiden');
+      } else {
+        refs.btnLoadMore.classList.remove('hiden');
+      }
       window.scrollTo({
         top: document.documentElement.offsetHeight,
         behavior: 'smooth',
